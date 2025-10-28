@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="MovListCell" customModule="TMDB_Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgD-bn-Ui2">
+                        <rect key="frame" x="8" y="8" width="335" height="81"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bel-0r-Csx">
+                                <rect key="frame" x="8" y="8" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Bel-0r-Csx" secondAttribute="height" multiplier="1:1" id="Nre-20-KRm"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dov-r2-B8W">
+                                <rect key="frame" x="287" y="20.666666666666671" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lkA-Y9-wfB"/>
+                                    <constraint firstAttribute="width" constant="40" id="wXX-5b-mJu"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                                <connections>
+                                    <action selector="favBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="c81-kv-Cxi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Civil War" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="clY-cK-Gag">
+                                <rect key="frame" x="81" y="8" width="198" height="47"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="1h 49m ★ 7,2" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="KBS-PZ-J4s">
+                                <rect key="frame" x="81" y="55" width="198" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="clY-cK-Gag" firstAttribute="top" secondItem="Bel-0r-Csx" secondAttribute="top" id="2w4-Ai-9ao"/>
+                            <constraint firstItem="Bel-0r-Csx" firstAttribute="leading" secondItem="PgD-bn-Ui2" secondAttribute="leading" constant="8" id="753-3m-VCQ"/>
+                            <constraint firstAttribute="trailing" secondItem="dov-r2-B8W" secondAttribute="trailing" constant="8" id="8CZ-pK-TuK"/>
+                            <constraint firstItem="dov-r2-B8W" firstAttribute="leading" secondItem="KBS-PZ-J4s" secondAttribute="trailing" constant="8" id="Bbv-BG-zKx"/>
+                            <constraint firstItem="clY-cK-Gag" firstAttribute="leading" secondItem="Bel-0r-Csx" secondAttribute="trailing" constant="8" id="Dum-7G-GNW"/>
+                            <constraint firstItem="KBS-PZ-J4s" firstAttribute="leading" secondItem="Bel-0r-Csx" secondAttribute="trailing" constant="8" id="HAP-2P-SPt"/>
+                            <constraint firstAttribute="bottom" secondItem="Bel-0r-Csx" secondAttribute="bottom" constant="8" id="Ng4-QA-MKV"/>
+                            <constraint firstItem="KBS-PZ-J4s" firstAttribute="top" secondItem="clY-cK-Gag" secondAttribute="bottom" id="SZ7-e1-Kcf"/>
+                            <constraint firstItem="dov-r2-B8W" firstAttribute="leading" secondItem="clY-cK-Gag" secondAttribute="trailing" constant="8" id="ihS-K2-XSd"/>
+                            <constraint firstItem="Bel-0r-Csx" firstAttribute="top" secondItem="PgD-bn-Ui2" secondAttribute="top" constant="8" id="k3d-R9-ZID"/>
+                            <constraint firstItem="KBS-PZ-J4s" firstAttribute="bottom" secondItem="Bel-0r-Csx" secondAttribute="bottom" id="thr-2F-WpU"/>
+                            <constraint firstItem="dov-r2-B8W" firstAttribute="centerY" secondItem="PgD-bn-Ui2" secondAttribute="centerY" id="wR2-LP-hDa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PgD-bn-Ui2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="HUy-iR-vRs"/>
+                    <constraint firstItem="PgD-bn-Ui2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Kb2-12-IKT"/>
+                    <constraint firstAttribute="trailing" secondItem="PgD-bn-Ui2" secondAttribute="trailing" constant="8" id="LiL-NJ-Rjy"/>
+                    <constraint firstAttribute="bottom" secondItem="PgD-bn-Ui2" secondAttribute="bottom" constant="8" id="T3N-A5-CYS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="PosterImg" destination="Bel-0r-Csx" id="2iR-Nh-G5e"/>
+                <outlet property="containerView" destination="PgD-bn-Ui2" id="AGD-GO-ZYu"/>
+                <outlet property="durRatLbl" destination="KBS-PZ-J4s" id="Xe5-ga-DIO"/>
+                <outlet property="favBtn" destination="dov-r2-B8W" id="wUw-Nn-Vfs"/>
+                <outlet property="titleLbl" destination="clY-cK-Gag" id="mQk-0n-9BG"/>
+            </connections>
+            <point key="canvasLocation" x="43.511450381679388" y="98.239436619718319"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
