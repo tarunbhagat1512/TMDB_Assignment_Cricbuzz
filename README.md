@@ -21,7 +21,7 @@ This app displays Movies List, lets you search for titles, view detailed informa
   - Poster  
   - Title, Rating, Duration, Genres  
   - Plot/Overview  
-  - Cast List (horizontal scroll)
+  - Cast List (horizontal scroll Please Note that there was no API or Data for Cast so binded Static data)
 - **Trailer player** embedded inline using `WKWebView` (YouTube integration).
 - “Open in YouTube” fallback using `SFSafariViewController`.
 
